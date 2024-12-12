@@ -270,7 +270,7 @@ h1{
 
 
 
-@media screen and (max-width: 991px) {
+@media (max-width: 991px) {
   .menu-icon:checked + label,
   .menu-icon:not(:checked) + label{
     right: 55px;
