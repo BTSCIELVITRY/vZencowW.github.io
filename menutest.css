@@ -290,5 +290,8 @@ h1{
   .nav ul li a{
     font-size: 8vh;
   }
+  .pt-5{
+    font-size: 15px;
+  }
 }
 
