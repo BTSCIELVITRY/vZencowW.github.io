@@ -279,7 +279,7 @@ h1{
     height: 25px;
   }
   .nav ul li a {
-    font-size: 6vh; /* Réduire la taille du texte */
+    font-size: 3vh; /* Réduire la taille du texte */
   }
   h1 {
     font-size: 10vw; /* Adapter le titre */
@@ -292,23 +292,3 @@ h1{
     height: 60px;
   }
 }
-
-/* Écran très petit - largeur inférieure à 480px */
-@media screen and (max-width: 480px) {
-  .menu-icon:checked + label, 
-  .menu-icon:not(:checked) + label {
-    width: 20px;
-    height: 20px;
-  }
-  .nav ul li a {
-    font-size: 5vh; /* Réduire encore la taille pour petits écrans */
-  }
-  h1 {
-    font-size: 12vw;
-  }
-  .nav {
-    width: 50px;
-    height: 50px;
-  }
-}
-
