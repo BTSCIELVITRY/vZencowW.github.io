@@ -268,7 +268,7 @@ h1{
 	display: block;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1080px) {
   .menu-icon:checked + label,
   .menu-icon:not(:checked) + label{
     right: 55px;
