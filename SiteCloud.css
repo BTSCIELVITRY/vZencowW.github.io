@@ -11,6 +11,7 @@ h1 {
     font: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-bottom: 90px;
+    text-align: center;
 }
 
 .type--A {
@@ -244,4 +245,5 @@ h1 {
   .button:not(:last-child) {
     margin-bottom: 64px;
   }
+  
   
