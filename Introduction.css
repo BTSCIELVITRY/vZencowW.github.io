@@ -11,6 +11,10 @@
     width: 1400px;
 }
 
+.coll {
+    height: 80px;
+}
+
 .bastab {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
