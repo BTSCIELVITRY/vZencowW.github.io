@@ -10,7 +10,7 @@
     background-image: url(./abstract-technology-background-cloud-computing-technology-concept-hi-tech-cloud-connection-technology-background-vector.jpg);
     align-content: center;
     width: 1400px;
-    padding-left: 50px;
+    margin-left: 30px;
 }
 
 .coll {
@@ -38,18 +38,14 @@ a:visited {
 .deutable {
     margin-top: 30px;
     border: none black;
+    text-align: center;
+    padding-left: 200px;
 }
 
 .previd {
     margin: 30px;
-}
-
-.deuvid {
-    margin: 30px;
-}
-
-.troivid {
-    margin: 30px;
+    width: 280px;
+    height: 157px;
 }
 
 .titre {
