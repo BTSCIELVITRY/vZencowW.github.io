@@ -14,6 +14,7 @@ body{
   background-size: 4%;
   height: 100vh;
   width: 100%;
+  overflow-x: hidden;
 }
 .section-center{
   position: absolute;
@@ -268,48 +269,46 @@ h1{
 	display: block;
 }
 
-@media (max-width: 1080px) {
-  .menu-icon:checked + label,
-  .menu-icon:not(:checked) + label{
-    right: 55px;
+/* Écran mobile - largeur inférieure à 768px */
+@media screen and (max-width: 768px) {
+  .menu-icon:checked + label, 
+  .menu-icon:not(:checked) + label {
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
   }
-  .logo {
-    left: 30px;
+  .nav ul li a {
+    font-size: 6vh; /* Réduire la taille du texte */
   }
-  body {
-    overflow-x: hidden;
-    /* Évite les décalages horizontaux */
-    overflow-y: auto;
-    padding: 0 5px;
-    /* Réduit légèrement les marges */
+  h1 {
+    font-size: 10vw; /* Adapter le titre */
+    -webkit-text-stroke: 1px #ffeba7; /* Ajuster l'épaisseur */
+  }
+  .nav {
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-    /* Dispose les éléments verticalement */
-    align-items: center;
-    /* Centre les éléments */
-    width: 100%;
-    /* Navigation sur toute la largeur */
-    gap: 10px;
-    font-size: 1em;
-    /* Taille adaptée pour lecture */
-}
-
-nav ul {
-    flex-direction: column;
-    /* Passe les liens en colonne */
-    align-items: center;
-    gap: 5px;
-    /* Réduit les espacements */
-    width: 100%;
-}
-
-nav ul li {
-    width: auto;
-    /* Permet aux éléments de s'adapter */
-    text-align: center;
-}
+/* Écran très petit - largeur inférieure à 480px */
+@media screen and (max-width: 480px) {
+  .menu-icon:checked + label, 
+  .menu-icon:not(:checked) + label {
+    width: 20px;
+    height: 20px;
+  }
+  .nav ul li a {
+    font-size: 5vh; /* Réduire encore la taille pour petits écrans */
+  }
+  h1 {
+    font-size: 12vw;
+  }
+  .nav {
+    width: 50px;
+    height: 50px;
+  }
 }
 
