@@ -3,11 +3,11 @@ body, html {
   }
 
 body {
-    background-image: url('/w3images/forestbridge.jpg');
+    background-image: url(./sorties-nature-4-forets-ou-il-fait-bon-flaner-_1_.jpg);
 }
   
 .bgimg {
-    background-image: url('/w3images/forestbridge.jpg');
+    background-image: url(./Depositphotos_89120612_s-2019.jpg);
     height: 100%;
     background-position: center;
     background-size: cover;
