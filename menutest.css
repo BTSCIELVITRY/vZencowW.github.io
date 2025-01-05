@@ -6,14 +6,14 @@ body{
 	font-size: 15px;
 	line-height: 1.7;
 	color: #ececee;
-	background-color: #1f2029;
+	background-color: #1f2029; /*change la couleur de fond pour le corps du document*/
 	overflow: hidden;
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
   background-position: center;
   background-repeat: repeat;
   background-size: 4%;
   height: 100vh;
-  width: 100%;
+  width: 100%;/*met la largeur au max pour le document*/
   overflow-x: hidden;
 }
 .section-center{
@@ -25,7 +25,7 @@ body{
   padding: 0;
   margin: 0;
   z-index: 6;
-  text-align: center;
+  text-align: center;/*aligne le texte au milieu pour les éléments de cette div*/
   transform: translateY(-50%);
 }
 h1{
@@ -33,20 +33,20 @@ h1{
   font-weight: 800;
   font-size: 7vw;
   line-height: 1;
-  color: #ffeba7;
+  color: #ffeba7;/*pour les titres h1 ils seront mit en jaune*/
   text-align: center;
   -webkit-text-stroke: 2px #ffeba7;
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
 
-[type="checkbox"]:checked,
+[type="checkbox"]:checked,/*selectionne les cases à cocher*/
 [type="checkbox"]:not(:checked){
   position: absolute;
   left: -9999px;
 }
 .menu-icon:checked + label,
-.menu-icon:not(:checked) + label{
+.menu-icon:not(:checked) + label{/*cible les labels associés aux cases cochés/décochés avec la class.menu-icon*/
   position: fixed;
   top: 63px;
   right: 75px;
@@ -55,7 +55,7 @@ h1{
   height: 30px;
   padding: 0;
   margin: 0;
-  cursor: pointer;
+  cursor: pointer;/*change le curseur pour voir qu'il est cliquable*/
   z-index: 10;
 }
 .menu-icon:checked + label:before,
@@ -65,19 +65,19 @@ h1{
   display: block;
   width: 30px;
   height: 20px;
-  z-index: 20;
+  z-index: 20;/*place l'élément au dessus de ceux qui ont un z-index inférieur a celui ci*/
   top: 0;
   left: 0;
   border-top: 2px solid #ececee;
   border-bottom: 2px solid #ececee;
-  transition: border-width 100ms 1500ms ease, 
+  transition: border-width 100ms 1500ms ease, /*ajoute une transition de 100ms avec un délai de 1500ms*/
               top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
               height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), 
               background-color 200ms ease,
               transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .menu-icon:checked + label:after,
-.menu-icon:not(:checked) + label:after{
+.menu-icon:not(:checked) + label:after{/*cible l'état ou la case n'est pas cocher*/
   position: absolute;
   content: '';
   display: block;
@@ -86,7 +86,7 @@ h1{
   z-index: 20;
   top: 10px;
   right: 4px;
-  background-color: #ececee;
+  background-color: #ececee;/*change la couleur de fond pour cette ligne*/
   margin-top: -1px;
   transition: width 100ms 1750ms ease, 
               right 100ms 1750ms ease,
@@ -103,7 +103,7 @@ h1{
               top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
               height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), 
               background-color 200ms 500ms ease,
-              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+              transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);/*assure la rotation de l'animation avec un délai de 1700ms*/
 }
 .menu-icon:checked + label:after{
   width: 30px;
@@ -111,7 +111,7 @@ h1{
   right: 0;
   transform: rotate(-45deg);
   transition: width 100ms ease,
-              right 100ms ease,  
+              right 100ms ease,  /*utile pour l'animation de droite avec 100ms*/
               margin-top 100ms 500ms ease, 
               transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -120,7 +120,7 @@ h1{
   position: fixed;
   top: 33px;
   right: 50px;
-  display: block;
+  display: block;/*le conteneur est affiché  comme un bloc*/
   width: 80px;
   height: 80px;
   padding: 0;
@@ -129,7 +129,7 @@ h1{
   overflow: hidden;
   box-shadow: 0 8px 30px 0 rgba(0,0,0,0.3);
   background-color: #353746;
-  animation: border-transform 7s linear infinite;
+  animation: border-transform 7s linear infinite;/*créer une animation pour les transformations des bords*/
   transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),  
               right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
               transform 250ms 1100ms ease,
@@ -137,7 +137,7 @@ h1{
               height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 @keyframes border-transform{
-    0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+    0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } /*l'animation commence et fini par la même forme qu'elle était au début*/
   14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
   28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
   42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
@@ -147,13 +147,13 @@ h1{
 }
 
 .menu-icon:checked ~ .nav {
-  animation-play-state: paused;
+  animation-play-state: paused;/*stop l'animation lorsque le menu s'est ouvert*/
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
   width: 200%;
   height: 200%;
-  transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),  
+  transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),  /*Définit des animations pour les changements de position, de taille et de transformation avec des délais et des durées spécifiques*/
               right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),
               transform 250ms 700ms ease,
               width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1),
@@ -169,7 +169,7 @@ h1{
   padding: 0;
   margin: 0;
   z-index: 6;
-  text-align: center;
+  text-align: center;/*aligne les liens des textes au centre*/
   transform: translateY(-50%);
   list-style: none;
 }
@@ -181,7 +181,7 @@ h1{
   margin: 10px 0;
   text-align: center;
   list-style: none;
-  pointer-events: none;
+  pointer-events: none;/*désactive l'interraction avec les éléments avant que l'animation se termine*/
   opacity: 0;
   visibility: hidden;
   transform: translateY(30px);
@@ -191,7 +191,7 @@ h1{
   transition-delay: 200ms;
 }
 .nav ul li:nth-child(2){
-  transition-delay: 150ms;
+  transition-delay: 150ms;/*sélectionne le deuxième élément de la liste et applique un délai de transition de 150ms*/
 }
 .nav ul li:nth-child(3){
   transition-delay: 100ms;
@@ -200,7 +200,7 @@ h1{
   transition-delay: 50ms;
 }
 .nav ul li a{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;/*change la famille de police pour les liens*/
   font-size: 9vh;
   text-transform: uppercase;
   line-height: 1.2;
@@ -211,7 +211,7 @@ h1{
   transition: all 250ms linear;
 }
 .nav ul li a:hover{
-  text-decoration: none;
+  text-decoration: none;/*supprime les surlignages au survol du lien*/
   color: #ffeba7;
 }
 .nav ul li a:after{
@@ -225,7 +225,7 @@ h1{
   left: 0;
   background-color: #353746;
   opacity: 0.8;
-  transition: width 250ms linear;
+  transition: width 250ms linear;/*la largeur de la ligne s'anime avec un délai de 250ms losqu'on survol ce lien*/
 }
 .nav ul li a:hover:after{
   width: 100%;
@@ -237,7 +237,7 @@ h1{
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 350ms ease,
+  transition: opacity 350ms ease,/*change l'opacité sur 350ms*/
   transform 250ms ease;
 }
 .menu-icon:checked ~ .nav ul li:nth-child(1){
@@ -250,7 +250,7 @@ h1{
   transition-delay: 1560ms;
 }
 .menu-icon:checked ~ .nav ul li:nth-child(4){
-  transition-delay: 1640ms;
+  transition-delay: 1640ms;/*il s'agit d'un délai supplémentaire appliqué aux transitions des éléments de la liste, celui ci est de 1640ms*/
 }
 
 
@@ -264,12 +264,11 @@ h1{
 	transition: all 250ms linear;
 }
 .logo img {
-	height: 26px;
+	height: 26px;/*fixe une hauteur de 26 pixels pour le .logo*/
 	width: auto;
 	display: block;
 }
 
-/* Écran mobile - largeur inférieure à 768px */
 @media screen and (max-width: 768px) {
   .menu-icon:checked + label, 
   .menu-icon:not(:checked) + label {
@@ -279,10 +278,10 @@ h1{
     height: 25px;
   }
   .nav ul li a {
-    font-size: 3vh; /* Réduire la taille du texte */
+    font-size: 3vh; /* Réduire la taille du texte à 3vh*/
   }
   h1 {
-    font-size: 10vw; /* Adapter le titre */
+    font-size: 10vw;
     -webkit-text-stroke: 1px #ffeba7; /* Ajuster l'épaisseur */
   }
   .nav {
