@@ -291,3 +291,11 @@ h1{
     height: 60px;
   }
 }
+
+.card:hover img {
+  transform: scale(2);
+}
+
+.card:hover .wrapper-image {
+  width: 800px;
+}
