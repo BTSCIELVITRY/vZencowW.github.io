@@ -292,10 +292,13 @@ h1{
   }
 }
 
+.ca {
+  width: 200px;
+  height: 200px;
+}
+
 .card:hover img {
   transform: scale(2);
-  height: 200px;
-  width: 200px;
 }
 
 .card:hover .wrapper-image {
