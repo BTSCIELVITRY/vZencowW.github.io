@@ -294,8 +294,8 @@ h1{
 
 .card:hover img {
   transform: scale(2);
-  height: 50%;
-  width: 50%;
+  height: 200px;
+  width: 200px;
 }
 
 .card:hover .wrapper-image {
