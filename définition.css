@@ -11,8 +11,17 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 1400px;
     font-weight: bold;
+    text-align: center
     background-image: ;
     background-image: url(./abstract-technology-background-cloud-computing-technology-concept-hi-tech-cloud-connection-technology-background-vector\ \(1\).jpg);
+}
+
+.ali {
+    text-align: center;
+}
+
+.lignhau {
+    height: 80px;
 }
 
 .bastableun {
