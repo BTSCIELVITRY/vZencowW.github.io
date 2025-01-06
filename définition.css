@@ -18,10 +18,13 @@
 
 .ali {
     text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-.lignhau {
+.ligneduhaut{
     height: 80px;
+    margin: ;
 }
 
 .bastableun {
@@ -56,6 +59,10 @@
 
 .coli {
     width: 450px;
+}
+
+.fondec {
+    background-image: url(./DALL·E-2025-01-06-22.21.jpg);
 }
 
 .celun {
