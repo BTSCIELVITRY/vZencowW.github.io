@@ -47,13 +47,26 @@
 
 .imago {
     padding-bottom: 35px;
+    width: 750px;
+}
+
+.imagow {
+    width: 600px;
+}
+
+.coli {
+    width: 450px;
 }
 
 .celun {
     background-color: rgb(13, 89, 148);
     margin: 20px;
     padding: 30px;
+    width: 530px;
+}
 
+.celuns {
+    width: 630px;
 }
 
 .maison {
