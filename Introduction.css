@@ -4,6 +4,7 @@
     font-size: 35px;
     color: white;
     text-align: center;/*aligne le texte au centre pour cette div*/
+    padding-left: 150px;
 }
 
 .tabl {
